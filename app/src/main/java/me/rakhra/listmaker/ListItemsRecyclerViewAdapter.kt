@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class ListItemsRecyclerViewAdapter(val list: TaskList): RecyclerView.Adapter<ListItemViewHolder>() {
+class ListItemsRecyclerViewAdapter(var list: TaskList): RecyclerView.Adapter<ListItemViewHolder>() {
     override fun getItemCount(): Int = list.task.size
 
     override fun onBindViewHolder(holder: ListItemViewHolder, position: Int) {
